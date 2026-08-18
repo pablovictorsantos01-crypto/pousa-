@@ -1,0 +1,4 @@
+node_modules/
+pousa.db
+pousa.db-wal
+pousa.db-shm

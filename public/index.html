@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pousa — encontre onde ficar</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav__logo">Pousa<span>.</span></a>
+  <div class="nav__links">
+    <a href="#explorar" class="link-muted">Explorar</a>
+    <a href="#" class="link-muted" id="favLink">Favoritos</a>
+  </div>
+  <div class="nav__user" id="navUser">
+    <a href="/login.html" class="btn btn--ghost">Entrar</a>
+    <a href="/register.html" class="btn btn--dark">Criar conta</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__sun"></div>
+  <div class="hero__stripes"></div>
+  <div class="hero__content">
+    <span class="hero__eyebrow">✦ Hospedagens com alma</span>
+    <h1 class="hero__title">Acorde em algum lugar <em>que vale a pena contar</em></h1>
+    <p class="hero__subtitle">Cabanas na serra, casas de vidro à beira-mar, redes na varanda. Lugares escolhidos a dedo, sem parecer catálogo.</p>
+  </div>
+
+  <div class="search">
+    <div class="search__field">
+      <label>Destino</label>
+      <input type="text" placeholder="Para onde vamos?" id="searchDestino">
+    </div>
+    <div class="search__field">
+      <label>Check-in</label>
+      <input type="date" id="searchCheckin">
+    </div>
+    <div class="search__field">
+      <label>Hóspedes</label>
+      <input type="text" placeholder="2 adultos" id="searchHospedes">
+    </div>
+    <button class="search__btn" id="searchBtn" aria-label="Buscar">→</button>
+  </div>
+</header>
+
+<section class="section" id="explorar">
+  <div class="section__head">
+    <div>
+      <h2>Explore por clima</h2>
+      <p>Cada estadia tem um jeito diferente de te tirar da rotina.</p>
+    </div>
+  </div>
+  <div class="chip-row" id="chipRow">
+    <button class="chip active" data-tag="todos">Todos</button>
+    <button class="chip" data-tag="Vista da montanha">Montanha</button>
+    <button class="chip" data-tag="Frente ao mar">Praia</button>
+    <button class="chip" data-tag="Vida urbana">Cidade</button>
+    <button class="chip" data-tag="Amazônia">Floresta</button>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="grid" id="listingsGrid">
+    <!-- preenchido via JS -->
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand">Pousa.</div>
+      <p>Hospedagens escolhidas a dedo pelo Brasil afora.</p>
+    </div>
+    <div>© 2026 Pousa — projeto de demonstração</div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

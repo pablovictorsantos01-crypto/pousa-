@@ -1,0 +1,137 @@
+{
+  "communities": {
+    "0": [
+      "public_js_main",
+      "public_js_main_alllistings",
+      "public_js_main_cardtemplate",
+      "public_js_main_escapehtml",
+      "public_js_main_favoriteids",
+      "public_js_main_fetchfavorites",
+      "public_js_main_fetchlistings",
+      "public_js_main_fetchme",
+      "public_js_main_renderlistings",
+      "public_js_main_rendernavuser",
+      "public_js_main_setupchips",
+      "public_js_main_setupsearch"
+    ],
+    "1": [
+      "package",
+      "package_author",
+      "package_description",
+      "package_keywords",
+      "package_license",
+      "package_main",
+      "package_name",
+      "package_scripts",
+      "package_scripts_test",
+      "package_version"
+    ],
+    "2": [
+      "bcryptjs",
+      "better_sqlite3",
+      "express",
+      "express_session",
+      "package_dependencies",
+      "package_dependencies_bcryptjs",
+      "package_dependencies_better_sqlite3",
+      "package_dependencies_express",
+      "package_dependencies_express_session"
+    ],
+    "3": [
+      "server",
+      "server_app",
+      "server_bcrypt",
+      "server_db",
+      "server_express",
+      "server_path",
+      "server_requireauth",
+      "server_session"
+    ],
+    "4": [
+      "public_js_auth",
+      "public_js_auth_clearerror",
+      "public_js_auth_loginform",
+      "public_js_auth_registerform",
+      "public_js_auth_showerror"
+    ],
+    "5": [
+      "db",
+      "db_database",
+      "db_db",
+      "db_path"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2878787878787879,
+    "1": 0.2,
+    "2": 0.2222222222222222,
+    "3": 0.25,
+    "4": 0.4,
+    "5": 0.5
+  },
+  "gods": [
+    {
+      "id": "public_js_main_renderlistings",
+      "label": "renderListings()",
+      "degree": 5
+    },
+    {
+      "id": "public_js_main_cardtemplate",
+      "label": "cardTemplate()",
+      "degree": 3
+    },
+    {
+      "id": "public_js_main_escapehtml",
+      "label": "escapeHtml()",
+      "degree": 3
+    },
+    {
+      "id": "public_js_main_fetchme",
+      "label": "fetchMe()",
+      "degree": 3
+    },
+    {
+      "id": "public_js_main_rendernavuser",
+      "label": "renderNavUser()",
+      "degree": 3
+    },
+    {
+      "id": "public_js_main_fetchfavorites",
+      "label": "fetchFavorites()",
+      "degree": 2
+    },
+    {
+      "id": "public_js_main_fetchlistings",
+      "label": "fetchListings()",
+      "degree": 2
+    },
+    {
+      "id": "public_js_main_setupchips",
+      "label": "setupChips()",
+      "degree": 2
+    },
+    {
+      "id": "public_js_main_setupsearch",
+      "label": "setupSearch()",
+      "degree": 2
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Community 2` to `Community 1`?",
+      "why": "High betweenness centrality (0.096) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `allListings`, `favoriteIds`, `author` to the rest of the system?",
+      "why": "25 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
